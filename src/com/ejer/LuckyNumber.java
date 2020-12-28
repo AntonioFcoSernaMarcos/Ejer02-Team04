@@ -192,6 +192,29 @@ public class LuckyNumber {
         
         return dia;
     }
+    public static int Lnum(int d, int m, int a){
+        int millares=0;
+         int centenas=0;
+         int decenas=0;
+         int unidades=0; 
+         int lunum=0;
+         lunum=a+m+d;
+          millares=lunum/1000;
+          centenas=(lunum%1000)/100;
+          decenas=((lunum%1000)/10)%10;
+          unidades=lunum%10;
+          lunum=millares+centenas+decenas+unidades;
+           if (lunum/10==0){
+             lunum=millares+centenas+decenas+unidades;
+          }
+          else{
+          decenas=lunum/10;
+          unidades=lunum%10;
+          lunum=decenas+unidades;
+         
+     }
+           return lunum;
+     }
 	public static void main(String[] args) {
 
 		
