@@ -216,9 +216,22 @@ public class LuckyNumber {
            return lunum;
      }
 	public static void main(String[] args) {
-
+		 int dia=0;
+	        int mes=0;
+	        int año=0;
+	        int lunum=0;
+	        año=PideAño();
+	        while (año!=0){
+	         mes=PideMes();
+	         dia=PideDia(mes);
+	        lunum=Lnum(dia,mes,año);
+	        System.out.println("Tu numero de la suerte es :"+lunum);
+	        lunum=0;
+	        año=PideAño();
+	        }
+	    }
 		
 
 	}
 
-}
+
