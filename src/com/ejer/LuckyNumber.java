@@ -64,6 +64,134 @@ public class LuckyNumber {
         
         return año;
     }
+    public static int PideDia(int m){
+        int dia=0;
+        do{
+           try{
+               System.out.print("Introduzca un dia : ");
+               dia=entrada.nextInt();
+               switch(m){
+                   case 1:
+                       if (dia>31){
+                           System.out.println("No hay mas de 31 dias en el mes de Enero");
+                           leido=false;
+                           entrada.nextLine();
+                       } else{
+                            leido=true;
+                        };break;
+                       
+                   case 2:
+                        if (dia>29){
+                           System.out.println("No hay mas de 29 dias en el mes de Febrero");
+                           leido=false;
+                           entrada.nextLine();
+                           
+                       }
+                        else{
+                            leido=true;
+                        };break;
+                      
+                   case 3:
+                       if (dia>31){
+                           System.out.println("No hay mas de 31 dias en el mes de Marzo");
+                           leido=false;
+                           entrada.nextLine();
+                       }
+                        else{
+                            leido=true;
+                        };break;
+                       
+                   case 4:
+                       if (dia>30){
+                           System.out.println("No hay mas de 30 dias en el mes de Abril");
+                           leido=false;
+                           entrada.nextLine();
+                       } else{
+                            leido=true;
+                        };break;
+                   case 5:
+                       if (dia>30){
+                           System.out.println("No hay mas de 30 dias en el mes de Mayo");
+                           leido=false;
+                           entrada.nextLine();
+                           
+                       } else{
+                            leido=true;
+                        };break;
+                       
+                   case 6:
+                       if (dia>30){
+                           System.out.println("No hay mas de 30 dias en el mes de Junio");
+                           leido=false;
+                           entrada.nextLine();
+                       } else{
+                            leido=true;
+                        };break;
+                      
+                   case 7:
+                       if (dia>31){
+                           System.out.println("No hay mas de 31 dias en el mes de Julio");
+                           leido=false;
+                           entrada.nextLine();
+                       } else{
+                            leido=true;
+                        };break;
+                       
+                   case 8:
+                       if (dia>31){
+                           System.out.println("No hay mas de 31 dias en el mes de Agosto");
+                           leido=false;
+                           entrada.nextLine();
+                       } else{
+                            leido=true;
+                        };break;
+                       
+                   case 9:
+                       if (dia>30){
+                           System.out.println("No hay mas de 30 dias en el mes de Septiembre");
+                           leido=false;
+                           entrada.nextLine();
+                       } else{
+                            leido=true;
+                        };break;
+                       
+                   case 10:
+                       if (dia>31){
+                           System.out.println("No hay mas de 31 dias en el mes de Octubre");
+                           leido=false;
+                           entrada.nextLine();
+                       } else{
+                            leido=true;
+                        };break;
+                       
+                   case 11:
+                       if (dia>30){
+                           System.out.println("No hay mas de 30 dias en el mes de Noviembre");
+                           leido=false;
+                           entrada.nextLine();
+                       } else{
+                            leido=true;
+                        };break;
+                       
+                   case 12:
+                       if (dia>31){
+                           System.out.println("No hay mas de 31 dias en el mes de diciembre");
+                           leido=false;
+                           entrada.nextLine();
+                       } else{
+                            leido=true;
+                        };break;
+                       
+                       
+               }
+           } catch(InputMismatchException ex){
+               System.out.println("Este valor no es valido por favor introduzca otro");
+               entrada.nextLine();
+           }
+        }while (leido==false);
+        
+        return dia;
+    }
 	public static void main(String[] args) {
 
 		
